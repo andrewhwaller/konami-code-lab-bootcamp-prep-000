@@ -14,7 +14,11 @@ const codes = [
 let index = 0
 
 function init() {
-
+  const body = document.getElementById('body');
+   
+  body.addEventListener('click', function onKeyDownHandler(e) {
+    
+  });
 }
 
 function onKeyDownHandler(e) {
