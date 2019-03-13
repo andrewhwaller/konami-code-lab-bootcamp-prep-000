@@ -25,5 +25,5 @@ function init() {
         window.alert("Stop foolin' around kid!");
         index = 0
       }
-  }
+  });
 }
