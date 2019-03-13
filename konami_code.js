@@ -15,7 +15,7 @@ let index = 0
 
 function init() {
   const body = document.getElementById('body');
-   
+
   body.addEventListener('click', function onKeyDownHandler(e) {
     
   });
@@ -29,7 +29,7 @@ function onKeyDownHandler(e) {
 
     if (index === codes.length) {
       alert("What do you think you're doing!?");
- 
+
       index = 0;
     }
   } else {
