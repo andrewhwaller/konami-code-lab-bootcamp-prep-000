@@ -14,25 +14,16 @@ const codes = [
 let index = 0
 
 function init() {
-  const body = document.getElementById('body');
+  let index = 0
 
-  body.addEventListener('click', function onKeyDownHandler(e) {
-    
-  });
-}
+  document.body.addEventListener("keydown", (e) => {
+    const key = e.key
 
-function onKeyDownHandler(e) {
-  const key = e.key;
+      index = (codes[index] === key) ? ++index : 0
 
-  if (key === codes[index]) {
-    index++;
-
-    if (index === codes.length) {
-      alert("What do you think you're doing!?");
-
-      index = 0;
-    }
-  } else {
-    index = 0;
+      if (index === codes.length) {
+        window.alert("Stop foolin' around kid!");
+        index = 0
+      }
   }
 }
