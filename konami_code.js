@@ -14,15 +14,15 @@ const codes = [
 let index = 0
 
 function init() {
-  
+
 }
 
 function onKeyDownHandler(e) {
   const key = e.key;
- 
+
   if (key === codes[index]) {
     index++;
- 
+
     if (index === codes.length) {
       alert("What do you think you're doing!?");
  
